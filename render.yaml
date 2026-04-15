@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: campus-lost-and-found
+    runtime: node
+    rootDir: .
+    buildCommand: npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false   # set this manually in Render dashboard
+      - key: JWT_SECRET
+        sync: false   # set this manually in Render dashboard
