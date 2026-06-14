@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
-      '/uploads': 'http://localhost:5000',
+      '/api': 'https://smart-campus-lost-found-n7sx.onrender.com',
+      '/uploads': 'https://smart-campus-lost-found-n7sx.onrender.com',
     },
   },
 })
