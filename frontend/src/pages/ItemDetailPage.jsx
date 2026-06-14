@@ -84,7 +84,7 @@ const ItemDetailPage = () => {
       {/* article — self-contained item listing content */}
       <article className="bg-white dark:bg-[#1a2e22] rounded-2xl shadow-md border border-gray-100 dark:border-[#2a4a35] overflow-hidden">
         {item.imageUrl && (
-          <img src={item.imageUrl} alt={item.title} className="w-full max-h-80 object-cover" />
+          <img src={`https://smart-campus-lost-found-n7sx.onrender.com${item.imageUrl}`} alt={item.title} className="w-full max-h-80 object-cover" />
         )}
         <div className="p-6 md:p-8">
           <div className="flex flex-wrap items-center gap-2 mb-4">
