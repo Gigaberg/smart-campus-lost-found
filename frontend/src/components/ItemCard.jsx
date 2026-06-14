@@ -12,7 +12,7 @@ const ItemCard = ({ item }) => {
   return (
     <Link to={`/items/${_id}`} className="group block bg-white dark:bg-[#1a2e22] rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden border border-gray-100 dark:border-[#2a4a35]">
       {imageUrl ? (
-        <img src={imageUrl} alt={title} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <img src={`https://smart-campus-lost-found-n7sx.onrender.com${imageUrl}`} alt={title} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" />
       ) : (
         <div className="w-full h-44 bg-gradient-to-br from-[#1a3a2a]/10 to-amber-50 dark:from-[#1a3a2a]/40 dark:to-[#0f1f17] flex items-center justify-center text-5xl">
           {type === 'lost' ? '🔍' : '📦'}
