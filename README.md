@@ -19,14 +19,13 @@ cd backend
 # Edit .env with your MONGO_URI and JWT_SECRET
 npm run dev
 ```
-Runs on http://localhost:5000
 
 ### Frontend
 ```bash
 cd frontend
 npm run dev
 ```
-Runs on http://localhost:5173 (proxies `/api` to backend)
+(proxies `/api` to backend)
 
 ## Features
 - Register / Login with JWT auth
